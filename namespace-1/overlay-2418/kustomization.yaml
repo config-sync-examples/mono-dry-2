@@ -1,0 +1,6 @@
+nameSuffix: "-2418"
+namespace: namespace-1
+commonLabels:
+  foo: bar
+resources:
+- ../../base

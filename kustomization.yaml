@@ -1,0 +1,8 @@
+resources:
+    - namespace-1
+    - namespace-2
+    - namespace-3
+    - namespace-4
+    - multi-sync/namespace-2.yaml
+    - multi-sync/namespace-3.yaml
+    - multi-sync/namespace-4.yaml

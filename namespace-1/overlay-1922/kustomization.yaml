@@ -1,0 +1,6 @@
+nameSuffix: "-1922"
+namespace: namespace-1
+commonLabels:
+  foo: bar
+resources:
+- ../../base

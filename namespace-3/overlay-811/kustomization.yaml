@@ -1,0 +1,6 @@
+nameSuffix: "-811"
+namespace: namespace-3
+commonLabels:
+  foo: bar
+resources:
+- ../../base

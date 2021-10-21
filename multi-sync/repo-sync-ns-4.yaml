@@ -1,0 +1,22 @@
+# root-sync.yaml
+# If you are using a Config Sync version earlier than 1.7.0,
+# use: apiVersion: configsync.gke.io/v1alpha1
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: namespace-4
+spec:
+  sourceFormat: unstructured
+  override:
+    resources:
+    - containerName: "reconciler"
+      memoryLimit: "1Gi"
+    - containerName: "hydration-controller"
+      cpuLimit: "1500m"
+  git:
+    repo: https://github.com/config-sync-examples/mono-dry-2.git
+    revision: HEAD
+    branch: main
+    dir: "namespace-4"
+    auth: none
